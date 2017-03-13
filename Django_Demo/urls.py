@@ -1,3 +1,4 @@
+# coding:utf-8
 """Django_Demo URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -15,7 +16,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from learn import views as learn_views
 
+# 总的urls的配置文件
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$',learn_views.index), #new
 ]

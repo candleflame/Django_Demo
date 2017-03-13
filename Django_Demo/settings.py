@@ -1,3 +1,4 @@
+# coding:utf-8
 """
 Django settings for Django_Demo project.
 
@@ -10,6 +11,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
+# 项目设置文件
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -29,7 +31,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# 将定义的app添加到配置中 使Django自动找到app中的模板文件和静态文件
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'learn',
 ]
 
 MIDDLEWARE = [
