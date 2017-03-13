@@ -21,5 +21,7 @@ from learn import views as learn_views
 # 总的urls的配置文件
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$',learn_views.index), #new
+    url(r'^$',learn_views.index1), # 输出Helloworld
+    url(r'^add/$',learn_views.index2,name='add'), # 计算a和b的加法
+
 ]
