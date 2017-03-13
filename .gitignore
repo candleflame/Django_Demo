@@ -1,0 +1,14 @@
+﻿*.DS_Store
+*.pages
+.metadata/*
+.recommenders/*
+*/.idea/*
+*.iml
+*/.bin/*
+*.classpath
+*.project
+*.class
+target
+.settings
+.idea/*
+*.pyc
