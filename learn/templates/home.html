@@ -5,7 +5,30 @@
     <title>Hello</title>
 </head>
 <body>
+{#<p>Hello world</p>#}
+{#<a href="{% url "add2" 2 4 %}">计算2+6</a> 参数的调用#}
+<p>{{ string }}</p>
 
-<a href="{% url "add2" 2 4 %}">计算2+6</a>
+{# 循环读取数据 #}
+{% for i in TutorialList %}
+{{ i }}
+{% endfor %}
+<br/>
+
+{# 读取字典数据 #}
+<p>操作系统：{{ info_dict.OS }} 作者：{{ info_dict.author }}</p>
+{# 遍历字典 #}
+<p>
+    {% for key,value in info_dict.items %}
+        {{ key }}:{{ value }}
+    {% endfor %}
+
+</p>
+
+
+{# 条件判断 输出100个数字 #}
+{% for item in List %}
+    {{ item }}{% if not forloop.last %},{% endif %}
+{% endfor %}
 </body>
 </html>

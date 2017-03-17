@@ -27,6 +27,7 @@ urlpatterns = [
 
     #name 可以用于在 templates, models, views ……中得到对应的网址，相当于“给网址取了个名字”，
     # 只要这个名字不变，网址变了也能通过名字获取到
-    url(r'^$',learn_views.index3, name="home"),
+    # url(r'^$',learn_views.index3, name="home"),
+    url(r'^$',learn_views.home, name="home"),
     url(r'^add/(\d+)/(\d+)/$',learn_views.add2,name="add2"),
 ]
