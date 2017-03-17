@@ -9,8 +9,18 @@ def index1(request):
     # HttpRequest 用来像网页返回内容 类似 print 将内容显示到网页上
     return HttpResponse("Hello world")
 
+# 计算加法
 def index2(request):
     a=request.GET['a']
     b=request.GET['b']
     c=int(a)+int(b)
     return HttpResponse(c)
+
+
+def index3(request):
+    return render(request, 'home.html')
+
+
+def add2(request,a,b):
+    c=int(a)+int(b)
+    return HttpResponse(str(c))
